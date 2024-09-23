@@ -22,7 +22,7 @@ COPY . .
 RUN pip3 install -r requirements.txt && \
     pip3 install -r requirements-app.txt
 
-RUN python scripts/download_model.py --models all
+RUN python3 scripts/download_model.py --models all
 
 RUN echo "==> Clean up..."  && \
     rm -rf ~/.cache/pip
