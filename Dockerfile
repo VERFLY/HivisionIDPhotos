@@ -19,10 +19,10 @@ WORKDIR /app
 
 COPY . .
 
-RUN python scripts/download_model.py --models all
-
 RUN pip3 install -r requirements.txt && \
     pip3 install -r requirements-app.txt
+
+RUN python scripts/download_model.py --models all
 
 RUN echo "==> Clean up..."  && \
     rm -rf ~/.cache/pip
