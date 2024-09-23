@@ -19,7 +19,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN scripts/download_model.py --models all
+RUN python scripts/download_model.py --models all
 
 RUN pip3 install -r requirements.txt && \
     pip3 install -r requirements-app.txt
