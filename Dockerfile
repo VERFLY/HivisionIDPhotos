@@ -32,4 +32,4 @@ RUN echo "==> Clean up..."  && \
 # EXPOSE 7860
 EXPOSE 8080
 
-CMD [ "python3", "-u", "deploy.py", "--host", "0.0.0.0", "--port", "8080"]
+CMD [ "python3", "-u", "deploy_api.py", "--host", "0.0.0.0", "--port", "8080"]
